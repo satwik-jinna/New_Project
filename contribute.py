@@ -27,7 +27,7 @@ def main(def_args=sys.argv[1:]):
     days_after = args.days_after
     if days_after < 0:
         sys.exit('days_after must not be negative')
-    os.mkdir(directory)
+    os.mkdir(directory + "_new")
     os.chdir(directory)
     run(['git', 'init', '-b', 'main'])
 
